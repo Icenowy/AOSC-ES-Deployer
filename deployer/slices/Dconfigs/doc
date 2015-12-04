@@ -1,0 +1,6 @@
+config SLICE_doc
+	bool "Documents Slice"
+	default n
+	help
+	  "doc" means documents. After cutting down this slice, the system
+	  won't be able to read local documents.
