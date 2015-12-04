@@ -10,8 +10,8 @@
 
 if [ -d $CONFIG_PATH_TARGET ]; then
 	echo "Target directory found. Clean it."
-	rm -rf $CONFIG_PATH_TARGET
-	mkdir -p $CONFIG_PATH_TARGET
+	sudo rm -rf $RMFLAGS $CONFIG_PATH_TARGET
+	sudo mkdir -p $CONFIG_PATH_TARGET
 fi
 
 if [ ! -e $CONFIG_PATH_TEMPLATE/etc/aosc-release ]; then

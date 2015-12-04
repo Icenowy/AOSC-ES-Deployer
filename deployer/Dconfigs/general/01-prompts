@@ -7,4 +7,22 @@ config APT_YES
 	  Add -y to each apt command, so the process will continue without
 	  any input from the user, if it's well.
 
+config RM_VERBOSE
+	bool "Verbose rm(1) calls"
+	default n
+	help
+	  Add -v to each rm command, so the process will be verbosed.
+
+config CP_VERBOSE
+	bool "Verbose cp(1) calls"
+	default n
+	help
+	  Add -v to each cp command, so the process will be verbosed.
+
+config MAIN_VERBOSE
+	bool "Verbose the main program"
+	default n
+	help
+	  Add -v to the main program, useful for debugging.
+
 endmenu
