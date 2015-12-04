@@ -1,4 +1,5 @@
 .config
+.config.old
 Dconfig
 target/
 template/

@@ -8,12 +8,23 @@ menu "General options"
 EOF
 for i in Dconfigs/general/*
 do
-	cat $i >> Dconfig
+	echo "source \"$i\"" >> Dconfig
 done
 cat >> Dconfig << EOF
 
 endmenu
 
+menu "Slices cut down"
+
 EOF
 
+for i in slices/Dconfigs/*
+do
+	echo "source \"$i\"" >> Dconfig
+done
 
+cat >> Dconfig << EOF
+
+endmenu
+
+EOF

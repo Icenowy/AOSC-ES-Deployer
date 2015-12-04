@@ -1,0 +1,17 @@
+menu "Paths"
+
+config PATH_TEMPLATE
+	string "Template system path"
+	default "template/"
+	help
+	  Specify the path of the template system.
+
+config PATH_TARGET
+	string "Target system path"
+	default "target/"
+	help
+	  Specify the path of the target system.
+
+endmenu
+
+
