@@ -4,4 +4,7 @@ SELF="$(readlink -f $0)"
 
 PREFIX="$(basename $SELF)"
 
-
+for i in proc/*.sh
+do
+	source $i
+done

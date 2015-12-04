@@ -1,6 +1,6 @@
-source $PREFIX/lib/slice.sh
+source lib/slice.sh
 
-for i in $PREFIX/slices/*.sh
+for i in slices/*.sh
 do
 	source $i
 done

@@ -1,6 +1,3 @@
-TARGET="$CONFIG_PATH_TARGET"
-TEMPLATE="$CONFIG_PATH_TEMPLATE"
-
 target_dpkg() {
 	sudo chroot $TARGET dpkg "$@"
 }
