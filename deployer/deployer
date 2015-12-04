@@ -4,11 +4,4 @@ SELF="$(readlink -f $0)"
 
 PREFIX="$(basename $SELF)"
 
-source $PREFIX/lib/slice.sh
-
-for i in $PREFIX/slices/*.sh
-do
-	source $i
-done
-
 

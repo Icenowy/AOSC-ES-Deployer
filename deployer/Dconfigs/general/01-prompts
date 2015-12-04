@@ -1,0 +1,10 @@
+menu "Prompts"
+
+config APT_YES
+	bool "Automatically say Yes to apt process"
+	default y
+	help
+	  Add -y to each apt command, so the process will continue without
+	  any input from the user, if it's well.
+
+endmenu
