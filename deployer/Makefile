@@ -7,7 +7,7 @@ deploy: .config
 help:
 	echo "This Makefile is only for configuration"
 	echo "make menuconfig for a configuration in a dialog-like interface"
-Dconfig: Dconfigs slices/Dconfigs
+Dconfig: Dconfigs slices/Dconfigs Dconfigs/general
 	sh scripts/gen_dconfig.sh
 menuconfig: utils/bin/mconf Dconfig
 	utils/bin/mconf Dconfig

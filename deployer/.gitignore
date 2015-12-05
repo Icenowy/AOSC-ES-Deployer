@@ -3,3 +3,4 @@
 Dconfig
 target/
 template/
+out/*.tar.xz
