@@ -7,4 +7,12 @@ config PACK_TARBALL
 	  If this option is chosen, the target will be packed as a tarball.
 	  (Currently only .tar.xz creation is supported)
 
+config PACK_TARBALL_PATH
+	string "The path of the tarball of target"
+	default "out/target.tar.xz"
+	help
+	  The path of the tarball generated from the target. Now only fixed
+	  names are supported.
+	depends on PACK_TARBALL
+
 endmenu
